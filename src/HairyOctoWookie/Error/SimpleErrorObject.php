@@ -1,28 +1,41 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace HairyOctoWookie\Error;
 
 /**
- * Description of ErrorObject
+ * Simple Error Object
+ * 
+ * Accepts and returns error strings
  *
- * @author Eric
+ * @author Eric Jones <e@erj1.com>
  */
 class SimpleErrorObject implements SimpleErrorInterface
 {
-    private $_error;
+    /**
+     * Error String
+     * 
+     * @var string
+     */
+    private $error;
     
+    /**
+     * Intializes the error string
+     * 
+     * @param string $error Error string in the format of
+     * "<ErrorNumber>:<ErrorText>"
+     */
     public function __construct($error)
     {
-        $this->_error = $error;
+        $this->error = $error;
     }
     
+    /**
+     * Returns the error string
+     * 
+     * @return string
+     */
     public function getError()
     {
-        return $this->_error;
+        return $this->error;
     }
 }

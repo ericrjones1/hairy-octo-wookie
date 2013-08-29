@@ -1,14 +1,11 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 namespace HairyOctoWookie\Error;
 
 /**
- *
- * @author Eric
+ * Complex Error Interface
+ * 
+ * @author Eric Jones <e@erj1.com>
  */
 interface ComplexErrorInterface
 {

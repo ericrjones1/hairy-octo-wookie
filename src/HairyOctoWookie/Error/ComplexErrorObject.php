@@ -1,21 +1,40 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 namespace HairyOctoWookie\Error;
 
 /**
- * Description of ComplexErrorObject
- *
- * @author Eric
+ * Complex Error Object
+ * 
+ * From a single error string in the format of "<ErrorNumber>:<ErrorText>",
+ * this class can provide the ErrorNumber, ErrorText, or the entire ErrorString
+ * 
+ * Adapter Pattern
+ * 
+ * @author Eric Jones <e@erj1.com>
  */
 class ComplexErrorObject extends SimpleErrorObject implements ComplexErrorInterface
 {
+    /**
+     * Error Number
+     * 
+     * @var integer
+     */
     private $errNum;
+    
+    /**
+     * Error Text
+     * 
+     * @var string
+     */
     private $errText;
     
+    /**
+     * Intializes the ErrorString, and splits the ErrorString into ErrorNumber,
+     * and ErrorText.
+     * 
+     * @param string $error Error string in the format of
+     * "<ErrorNumber>:<ErrorText>"
+     */
     public function __construct($error)
     {
         parent::__construct($error);
@@ -25,11 +44,21 @@ class ComplexErrorObject extends SimpleErrorObject implements ComplexErrorInterf
         $this->errText = $parts[1];
     }
     
+    /**
+     * Returns the error number
+     * 
+     * @return integer
+     */
     public function getErrorNumber()
     {
         return $this->errNum;
     }
     
+    /**
+     * Returns the error string
+     * 
+     * @return string
+     */
     public function getErrorText()
     {
         return $this->errText;
