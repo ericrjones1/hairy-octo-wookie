@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 
-namespace VisionEquity\Error\Log;
+namespace HairyOctoWookie\Error\Log;
 
 /**
  * Error Log Interface

@@ -1,8 +1,8 @@
 <?php
 
-namespace VisionEquity\Error\Log;
+namespace HairyOctoWookie\Error\Log;
 
-use VisionEquity\Error\SimpleErrorInterface;
+use HairyOctoWookie\Error\SimpleErrorInterface;
 
 class LogToConsole implements ErrorLogInterface
 {

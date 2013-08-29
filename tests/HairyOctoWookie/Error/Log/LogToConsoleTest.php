@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 
-use VisionEquity\Error\Log\LogToConsole;
+use HairyOctoWookie\Error\Log\LogToConsole;
 
 /**
  * Description of LogToConsoleTest

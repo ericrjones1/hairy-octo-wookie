@@ -1,8 +1,8 @@
 <?php
 
-namespace VisionEquity\Error\Log;
+namespace HairyOctoWookie\Error\Log;
 
-use VisionEquity\Error\ComplexErrorInterface;
+use HairyOctoWookie\Error\ComplexErrorInterface;
 
 class LogToCSV implements ErrorLogInterface
 {

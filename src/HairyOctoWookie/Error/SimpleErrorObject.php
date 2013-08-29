@@ -5,14 +5,14 @@
  * and open the template in the editor.
  */
 
-namespace VisionEquity\Error;
+namespace HairyOctoWookie\Error;
 
 /**
  * Description of ErrorObject
  *
  * @author Eric
  */
-class ErrorObject implements SimpleErrorInterface
+class SimpleErrorObject implements SimpleErrorInterface
 {
     private $_error;
     

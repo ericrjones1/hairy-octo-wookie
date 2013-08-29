@@ -2,7 +2,7 @@
     "author": "Eric Jones",
     "autoload": {
         "psr-0": {
-            "VisionEquity": "src/"
+            "HairyOctoWookie": "src/"
         }
     }
 }
