@@ -12,7 +12,7 @@ namespace VisionEquity\Error;
  *
  * @author Eric
  */
-class ErrorObject
+class ErrorObject implements SimpleErrorInterface
 {
     private $_error;
     

@@ -1,28 +1,19 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 namespace VisionEquity\Error\Log;
 
-use VisionEquity\Error\ErrorObject;
+use VisionEquity\Error\SimpleErrorInterface;
 
-/**
- * Description of LogToConsole
- *
- * @author Eric
- */
 class LogToConsole implements ErrorLogInterface
 {
     /**
      * ErrorObject
      * 
-     * @var VisionEquity\Error\ErrorObject
+     * @var VisionEquity\Error\SimpleErrorInterface
      */
     private $_errorObject;
     
-    public function __construct(ErrorObject $errorObject)
+    public function __construct(SimpleErrorInterface $errorObject)
     {
         $this->_errorObject = $errorObject;
     }
