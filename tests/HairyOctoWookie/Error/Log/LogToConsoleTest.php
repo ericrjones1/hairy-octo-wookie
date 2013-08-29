@@ -24,6 +24,6 @@ class LogToConsoleTest extends PHPUnit_Framework_TestCase
      */
     public function testLogToConsoleWrite()
     {
-        $this->markTestIncomplete('Unable To Capture STDERR stream');
+        $this->markTestIncomplete('Unable to capture STDERR stream');
     }
 }
